@@ -7,11 +7,34 @@ x = { 1 : 1, 2 : 4, 3 : 9, 4 : 16, 5 : 25, 6 : 36, 7 : 49, 8 : 64, 9 : 81, 10 : 
 """
 
 def squares(n):
-    # n should be an integer value
-    # x will be the generated dictionary
+
+    print('Enter a integer value')
+    n = input(':')
+
+    n = int(n)
+
+    NUMBER = 1
+
     x={}
-    # your code goes here
+
+    while NUMBER < n:
+
+        NUMBER = int(NUMBER)
+        NUMBER_Sqr = NUMBER * NUMBER
+
+        x[NUMBER] = NUMBER_Sqr
+
+        NUMBER = NUMBER + 1
+        
+    print(x)
     return x
 
 assert squares(8) == {1: 1, 2: 4, 3: 9, 4: 16, 5: 25, 6: 36, 7: 49}
 assert squares(10) == {1: 1, 2: 4, 3: 9, 4: 16, 5: 25, 6: 36, 7: 49, 8: 64, 9: 81}
+
+#DONE
+
+
+
+
+

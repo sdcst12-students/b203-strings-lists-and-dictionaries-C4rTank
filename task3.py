@@ -21,13 +21,33 @@ sortMe = {
     15: -2, 
     17: 0, 
     18: -1, 
-    20: 3
-  }
+    20: 3}
 
+#List
 keys = []
 values = []
 
+#Keys and Values
+key = sortMe.keys()
+value = sortMe.values()
 
+#Finding Keys
+for key in sortMe:
+    keys.append(key)
+
+#Finding Values
+for i in sortMe:
+    values.append(sortMe[i])
+
+#Sorting 
+keys.sort()
+values.sort()
+
+#Printing
+print(keys)
+print(values)
 
 assert keys == [1, 2, 4, 6, 9, 10, 11, 13, 14, 15, 17, 18, 20]
 assert values == [-2, -2, -1, 0, 0, 0, 1, 2, 3, 3, 3, 4, 6]
+
+#DONE
